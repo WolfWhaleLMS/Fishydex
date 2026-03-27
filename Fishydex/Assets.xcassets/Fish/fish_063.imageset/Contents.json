@@ -1,10 +1,9 @@
 {
   "images": [
     {
-      "filename": "AppIcon.png",
+      "filename": "fish_063.jpg",
       "idiom": "universal",
-      "platform": "ios",
-      "size": "1024x1024"
+      "scale": "1x"
     }
   ],
   "info": {

@@ -1,0 +1,24 @@
+Discover every fish in Saskatchewan like never before. Fishydex turns your phone into a real-life Pokedex for fish -- scan, identify, and log every species you encounter across the province's lakes, rivers, and streams.
+
+SCAN AND IDENTIFY FISH INSTANTLY
+Point your camera at any catch and let Fishydex identify the species automatically. Powered by iNaturalist's world-class computer vision, the AR scanner analyzes your photo and returns species matches with confidence scores. No more guessing whether you caught a walleye or a sauger.
+
+84 REAL SASKATCHEWAN SPECIES
+Fishydex features a complete database of 84 fish species found in Saskatchewan waters. Each entry includes detailed information presented in a classic Pokedex-style interface -- species stats, habitat, size ranges, identifying features, and conservation status. Browse the full index or discover new species as you catch them.
+
+LOG EVERY CATCH
+Record your fishing achievements with the built-in catch logger. Each entry captures the species, photo, GPS location, date, and your personal notes. Track your progress toward completing the full Fishydex and see which species you still need to find.
+
+POKEDEX-INSPIRED INTERFACE
+The entire app is designed around the iconic Pokedex aesthetic -- red shell, scanner lens, species entries that feel like discovering a new creature. Fish you have caught are shown in full color; undiscovered species appear as silhouettes. Fill your Fishydex one catch at a time.
+
+GPS CATCH MAP
+Every catch is automatically tagged with your GPS coordinates. View all your catches on a map to see your fishing history across Saskatchewan. Find patterns in where different species show up and plan your next trip accordingly.
+
+WORKS OFFLINE
+All your catch data is stored locally on your device. Browse your species database, review past catches, and check your progress without needing cell service -- perfect for remote Saskatchewan lakes where signal is scarce.
+
+NO ACCOUNTS, NO ADS, NO TRACKING
+Fishydex respects your privacy. There are no accounts to create, no ads to dismiss, and no analytics tracking your usage. Just you, your phone, and the fish.
+
+Built for Saskatchewan anglers who want to know exactly what they are catching. Start filling your Fishydex today.
