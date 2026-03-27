@@ -4,7 +4,7 @@ import CoreLocation
 
 // MARK: - ScannerViewModel
 
-/// Drives the camera scanner flow — capture a photo, pick the species, and confirm the catch.
+/// Drives the camera scanner flow — capture a photo, auto-identify via iNaturalist, and confirm the catch.
 @Observable
 @MainActor
 final class ScannerViewModel {
@@ -23,16 +23,56 @@ final class ScannerViewModel {
     /// Set after a successful catch to let the view present a discovery animation.
     var lastCatchWasNewDiscovery: Bool = false
 
+    // MARK: - AI Identification State
+
+    /// Current state of the auto-identification process.
+    var identificationState: IdentificationUIState = .idle
+
+    /// Top matches from iNaturalist, ranked by confidence.
+    var identifiedMatches: [FishIdentificationService.Match] = []
+
+    /// Whether the auto-ID found a confident match (>= 60% confidence).
+    var hasConfidentMatch: Bool {
+        guard let top = identifiedMatches.first else { return false }
+        return top.confidence >= 0.6
+    }
+
+    enum IdentificationUIState: Equatable {
+        case idle
+        case analyzing       // "ANALYZING..." spinner
+        case identified      // Got results — show top match + confirm button
+        case noMatch         // No fish found — fall back to manual picker
+        case failed(String)  // Error — show message + manual fallback
+
+        static func == (lhs: IdentificationUIState, rhs: IdentificationUIState) -> Bool {
+            switch (lhs, rhs) {
+            case (.idle, .idle), (.analyzing, .analyzing),
+                 (.identified, .identified), (.noMatch, .noMatch):
+                return true
+            case (.failed(let a), .failed(let b)):
+                return a == b
+            default:
+                return false
+            }
+        }
+    }
+
     // MARK: - Dependencies
 
     private let catchService: CatchService
     private let locationService: LocationService
+    private let identificationService: FishIdentificationService
 
     // MARK: - Init
 
-    init(catchService: CatchService, locationService: LocationService) {
+    init(
+        catchService: CatchService,
+        locationService: LocationService,
+        identificationService: FishIdentificationService
+    ) {
         self.catchService = catchService
         self.locationService = locationService
+        self.identificationService = identificationService
     }
 
     // MARK: - Scanning Flow
@@ -44,27 +84,69 @@ final class ScannerViewModel {
         selectedFishId = nil
         lastCatchWasNewDiscovery = false
         errorMessage = nil
+        identificationState = .idle
+        identifiedMatches = []
 
         // Request location in the background; non-blocking if denied.
         do {
             try await locationService.requestPermission()
             currentLocation = try await locationService.currentLocation()
         } catch {
-            // Location is optional — continue without it.
             currentLocation = nil
         }
     }
 
-    /// Called when the camera captures a frame.
+    /// Called when the camera captures a frame. Triggers auto-identification.
     func capturePhoto(_ image: UIImage) async {
         capturedImage = image
         isScanning = false
+        identificationState = .analyzing
+
+        // Run auto-identification
+        let result = await identificationService.identify(
+            image: image,
+            location: currentLocation
+        )
+
+        switch result {
+        case .identified(let matches):
+            identifiedMatches = matches
+            identificationState = .identified
+
+            // If top match is very confident (>= 80%), auto-select it
+            if let topMatch = matches.first, topMatch.confidence >= 0.8 {
+                selectedFishId = topMatch.fish.id
+            }
+
+        case .noMatch:
+            identifiedMatches = []
+            identificationState = .noMatch
+            // Fall back to manual picker
+            showSpeciesPicker = true
+
+        case .failed(let message):
+            identifiedMatches = []
+            identificationState = .failed(message)
+            // Fall back to manual picker
+            showSpeciesPicker = true
+
+        case .idle, .analyzing:
+            break
+        }
+    }
+
+    /// User confirms the auto-identified species or picks manually.
+    func confirmIdentification(fishId: Int) async {
+        await confirmCatch(fishId: fishId)
+    }
+
+    /// User rejects auto-ID and wants to pick manually.
+    func rejectIdentification() {
+        identificationState = .idle
         showSpeciesPicker = true
     }
 
     /// Confirms the catch for the selected species.
-    /// - Parameter fishId: The Pokedex ID chosen by the user.
-    /// - Returns: `true` if this was a brand-new discovery, `false` for a repeat catch.
     @discardableResult
     func confirmCatch(fishId: Int) async -> Bool {
         isProcessing = true
@@ -72,10 +154,8 @@ final class ScannerViewModel {
         lastCatchWasNewDiscovery = false
 
         do {
-            // Check if this is a new discovery
             let alreadyDiscovered = try await catchService.isDiscovered(fishId)
 
-            // Compress the captured image
             let photoData = capturedImage?.jpegData(compressionQuality: 0.8)
             let locationName: String? = if let loc = currentLocation {
                 try? await locationService.locationName(for: loc)
@@ -83,7 +163,6 @@ final class ScannerViewModel {
                 nil
             }
 
-            // Log the catch (auto-discovers on first catch)
             _ = try await catchService.logCatch(
                 fishId: fishId,
                 latitude: currentLocation?.coordinate.latitude,
@@ -92,7 +171,6 @@ final class ScannerViewModel {
                 photoData: photoData
             )
 
-            // Check if this was a new discovery
             if !alreadyDiscovered {
                 lastCatchWasNewDiscovery = true
                 triggerDiscoveryHaptic()
@@ -100,9 +178,9 @@ final class ScannerViewModel {
                 triggerCatchHaptic()
             }
 
-            // Clean up state
             showSpeciesPicker = false
             selectedFishId = fishId
+            identificationState = .idle
             isProcessing = false
 
             return lastCatchWasNewDiscovery
@@ -119,6 +197,8 @@ final class ScannerViewModel {
         selectedFishId = nil
         showSpeciesPicker = false
         lastCatchWasNewDiscovery = false
+        identificationState = .idle
+        identifiedMatches = []
         isScanning = true
     }
 
@@ -133,6 +213,8 @@ final class ScannerViewModel {
         isProcessing = false
         errorMessage = nil
         lastCatchWasNewDiscovery = false
+        identificationState = .idle
+        identifiedMatches = []
     }
 
     // MARK: - Haptics

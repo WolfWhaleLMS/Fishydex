@@ -8,11 +8,15 @@ import AVFoundation
 struct ScannerView: View {
 
     @State private var viewModel: ScannerViewModel = {
-        // These will be injected via environment in the real app.
-        // For now, create with default services.
         let catchService = CatchService(modelContainer: try! .init(for: CatchRecord.self, DiscoveryState.self))
         let locationService = LocationService()
-        return ScannerViewModel(catchService: catchService, locationService: locationService)
+        let iNatService = INaturalistService()
+        let idService = FishIdentificationService(iNatService: iNatService)
+        return ScannerViewModel(
+            catchService: catchService,
+            locationService: locationService,
+            identificationService: idService
+        )
     }()
 
     @State private var discoveredFishIds: Set<Int> = []
@@ -39,16 +43,27 @@ struct ScannerView: View {
             )
             .ignoresSafeArea()
 
-            // Bottom capture button
-            VStack {
-                Spacer()
+            // Bottom capture button (only when scanning)
+            if viewModel.isScanning {
+                VStack {
+                    Spacer()
 
-                ScannerCaptureButton(isActive: viewModel.isScanning) {
-                    capturePhoto()
+                    ScannerCaptureButton(isActive: viewModel.isScanning) {
+                        capturePhoto()
+                    }
+                    .padding(.bottom, 40)
                 }
-                .padding(.bottom, 40)
+            }
+
+            // Auto-identification result overlay
+            if viewModel.identificationState != .idle {
+                ScannerResultView(viewModel: viewModel) {
+                    viewModel.cancelCapture()
+                }
+                .transition(.opacity.combined(with: .scale(scale: 0.95)))
             }
         }
+        .animation(.easeInOut(duration: 0.3), value: viewModel.identificationState)
         .sheet(isPresented: $viewModel.showSpeciesPicker) {
             FishSpeciesPickerView(
                 discoveredFishIds: discoveredFishIds,

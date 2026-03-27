@@ -26,6 +26,7 @@
 		387CBCCC1CE6971FB1E46B85 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6088FB85D2ABC09E3A162695 /* Extensions.swift */; };
 		3B9AF157296480C878DF4E84 /* CollectionStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232294384227320E00837DF8 /* CollectionStatsView.swift */; };
 		403A9C9F905A6BFD21DA9F0F /* CatchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B653B1CD28CA9DA461F87D7 /* CatchService.swift */; };
+		40E1730229BE7D3A34B0451E /* ScannerResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1B47A4EE91DE9F7C73CE82 /* ScannerResultView.swift */; };
 		4C2C375D19A9A2A1E52150F0 /* Umbridae.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3ABD8211DBBB402F4321BD /* Umbridae.swift */; };
 		4F3E0A9560E858F41AABD4E9 /* CatchLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381A6F48804F2BD2B6EFC6A5 /* CatchLogView.swift */; };
 		53103FF7D176A82C2F6E6072 /* PokedexGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C06AFA4817F28215C05E45 /* PokedexGridView.swift */; };
@@ -47,6 +48,7 @@
 		834DFAA5AABEE1517AF73EA1 /* ScannerHUDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB471E4B65729B9077F021C0 /* ScannerHUDView.swift */; };
 		842F1432C08BF607987CE377 /* FishRevealAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21161444D6E40F4028FE147 /* FishRevealAnimation.swift */; };
 		85FD6994CAC95B32B61AA1CE /* FishStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61148739784145474D8014A6 /* FishStatsView.swift */; };
+		86FBB9CF8782BFB725136015 /* FishIdentificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDCC77D711B07BD0DBA59CA /* FishIdentificationService.swift */; };
 		909357BEBD0DB6D9735CEF8A /* Fish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202FA32F2B69BB934A5E603D /* Fish.swift */; };
 		95101D94A313CEBC1D7CF254 /* Ictaluridae.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE4971F2B90AD8125D40749 /* Ictaluridae.swift */; };
 		9769095C0A6DD414B00D3D94 /* FishDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D77FB900890CC65059D32B6 /* FishDetailView.swift */; };
@@ -71,6 +73,7 @@
 		EA4D810C77B2455781F9F450 /* Centrarchidae.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6071FD8A224524525AA05 /* Centrarchidae.swift */; };
 		F415949B887E05B96FC08F40 /* PokedexShellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B29C51316F5500D9C20923B /* PokedexShellView.swift */; };
 		F7872A78668AAE5EB4F56FB7 /* ARFishCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F421B3248BDA4F8B56349FA /* ARFishCardView.swift */; };
+		FCC77100C5EFC88040B31BAA /* INaturalistService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB67F1905F952359CD0E13A2 /* INaturalistService.swift */; };
 		FD24CFB8727F65C16DA76214 /* PokedexTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C52E8132EF00278D125736 /* PokedexTheme.swift */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +92,7 @@
 		27FDDB4B3EFBB6880E425355 /* Esocidae.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Esocidae.swift; sourceTree = "<group>"; };
 		2BE4971F2B90AD8125D40749 /* Ictaluridae.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ictaluridae.swift; sourceTree = "<group>"; };
 		2C77755ACE66B16DC217D8E0 /* PokedexProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexProgressBar.swift; sourceTree = "<group>"; };
+		2FDCC77D711B07BD0DBA59CA /* FishIdentificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishIdentificationService.swift; sourceTree = "<group>"; };
 		334B0C4B391215CBAF5E1D06 /* PokedexSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexSearchBar.swift; sourceTree = "<group>"; };
 		35D8C0A3C55A746910535E62 /* TypeBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeBadge.swift; sourceTree = "<group>"; };
 		381A6F48804F2BD2B6EFC6A5 /* CatchLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchLogView.swift; sourceTree = "<group>"; };
@@ -96,6 +100,7 @@
 		417A28B035DA94D2DDF982C9 /* FishDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishDatabase.swift; sourceTree = "<group>"; };
 		42E0A6FE8957CC336CF41038 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		44E3EF2F6AF7F17AE6E3162D /* CatchHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchHistoryView.swift; sourceTree = "<group>"; };
+		4A1B47A4EE91DE9F7C73CE82 /* ScannerResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerResultView.swift; sourceTree = "<group>"; };
 		4B653B1CD28CA9DA461F87D7 /* CatchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchService.swift; sourceTree = "<group>"; };
 		4E728A46D86FD27C2E2F03B5 /* Acipenseridae.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acipenseridae.swift; sourceTree = "<group>"; };
 		4FF3E59A918DC612118D162C /* RarityGlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RarityGlow.swift; sourceTree = "<group>"; };
@@ -122,6 +127,7 @@
 		983EEB5C26A73B1E1C723529 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
 		9B25D6F955882F5E03DE1697 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A77BE4D14B28E4FCA6864320 /* Cyprinidae.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cyprinidae.swift; sourceTree = "<group>"; };
+		AB67F1905F952359CD0E13A2 /* INaturalistService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INaturalistService.swift; sourceTree = "<group>"; };
 		AD5532DC28AD42CCA3B713F8 /* ARContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARContainerView.swift; sourceTree = "<group>"; };
 		AE419588A515D7BEB2F4CB80 /* Gasterosteidae.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gasterosteidae.swift; sourceTree = "<group>"; };
 		B7DE50432F34DA390CF56DF2 /* ScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewModel.swift; sourceTree = "<group>"; };
@@ -219,7 +225,9 @@
 			isa = PBXGroup;
 			children = (
 				4B653B1CD28CA9DA461F87D7 /* CatchService.swift */,
+				2FDCC77D711B07BD0DBA59CA /* FishIdentificationService.swift */,
 				741832D64EDB3CD872E960EF /* HapticsService.swift */,
+				AB67F1905F952359CD0E13A2 /* INaturalistService.swift */,
 				D716414F63B67CA705CFDC76 /* LocationService.swift */,
 			);
 			path = Services;
@@ -296,6 +304,7 @@
 				F8FADF56382B4C7D4759C0E1 /* ScannerCaptureButton.swift */,
 				EB471E4B65729B9077F021C0 /* ScannerHUDView.swift */,
 				E211F7485F8706F5F080E798 /* ScannerPlaceholderView.swift */,
+				4A1B47A4EE91DE9F7C73CE82 /* ScannerResultView.swift */,
 				5BFE8F0D81D7FDF86A9DA5D8 /* ScannerReticle.swift */,
 				983EEB5C26A73B1E1C723529 /* ScannerView.swift */,
 			);
@@ -465,6 +474,7 @@
 				C6B89E2EC23332394E6256EE /* FishDetailViewModel.swift in Sources */,
 				D643E8467F03C107C174F0AF /* FishFamily.swift in Sources */,
 				2D8930D816C1459B8501C07E /* FishHabitatView.swift in Sources */,
+				86FBB9CF8782BFB725136015 /* FishIdentificationService.swift in Sources */,
 				842F1432C08BF607987CE377 /* FishRevealAnimation.swift in Sources */,
 				1AAC01BFECCB5E062788A083 /* FishSpeciesPickerView.swift in Sources */,
 				85FD6994CAC95B32B61AA1CE /* FishStatsView.swift in Sources */,
@@ -474,6 +484,7 @@
 				03D61CFFFF6C68906C7C1F2B /* Gasterosteidae.swift in Sources */,
 				CB86D9CC962D201FB861F9FF /* HapticsService.swift in Sources */,
 				DE78A1E5AF7F791B608CFEEF /* Hiodontidae.swift in Sources */,
+				FCC77100C5EFC88040B31BAA /* INaturalistService.swift in Sources */,
 				95101D94A313CEBC1D7CF254 /* Ictaluridae.swift in Sources */,
 				5F31A7040D63DA2FAD53B70B /* LocationService.swift in Sources */,
 				31380B2308BCF82BD9BBBD51 /* Osmeridae.swift in Sources */,
@@ -497,6 +508,7 @@
 				1230E54D8AEDF00B1D8B6909 /* ScannerCaptureButton.swift in Sources */,
 				834DFAA5AABEE1517AF73EA1 /* ScannerHUDView.swift in Sources */,
 				66827F99BA7C55424E53B81A /* ScannerPlaceholderView.swift in Sources */,
+				40E1730229BE7D3A34B0451E /* ScannerResultView.swift in Sources */,
 				80D44C93A2B05CB5D31AAD95 /* ScannerReticle.swift in Sources */,
 				B59CFEEFD88F9DB0F5673C38 /* ScannerView.swift in Sources */,
 				244CB2CA0DCC614C5DCFE94A /* ScannerViewModel.swift in Sources */,
