@@ -27,6 +27,7 @@
 		3B9AF157296480C878DF4E84 /* CollectionStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232294384227320E00837DF8 /* CollectionStatsView.swift */; };
 		403A9C9F905A6BFD21DA9F0F /* CatchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B653B1CD28CA9DA461F87D7 /* CatchService.swift */; };
 		40E1730229BE7D3A34B0451E /* ScannerResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1B47A4EE91DE9F7C73CE82 /* ScannerResultView.swift */; };
+		43DCE59F0DB9F058A2C216CD /* PokedexVoiceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3911C10FC3ECDB718E9F8E23 /* PokedexVoiceService.swift */; };
 		4C2C375D19A9A2A1E52150F0 /* Umbridae.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3ABD8211DBBB402F4321BD /* Umbridae.swift */; };
 		4F3E0A9560E858F41AABD4E9 /* CatchLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381A6F48804F2BD2B6EFC6A5 /* CatchLogView.swift */; };
 		53103FF7D176A82C2F6E6072 /* PokedexGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C06AFA4817F28215C05E45 /* PokedexGridView.swift */; };
@@ -96,6 +97,7 @@
 		334B0C4B391215CBAF5E1D06 /* PokedexSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexSearchBar.swift; sourceTree = "<group>"; };
 		35D8C0A3C55A746910535E62 /* TypeBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeBadge.swift; sourceTree = "<group>"; };
 		381A6F48804F2BD2B6EFC6A5 /* CatchLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchLogView.swift; sourceTree = "<group>"; };
+		3911C10FC3ECDB718E9F8E23 /* PokedexVoiceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexVoiceService.swift; sourceTree = "<group>"; };
 		397A12A048F33254FA32132A /* PokedexHingeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexHingeView.swift; sourceTree = "<group>"; };
 		417A28B035DA94D2DDF982C9 /* FishDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishDatabase.swift; sourceTree = "<group>"; };
 		42E0A6FE8957CC336CF41038 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -229,6 +231,7 @@
 				741832D64EDB3CD872E960EF /* HapticsService.swift */,
 				AB67F1905F952359CD0E13A2 /* INaturalistService.swift */,
 				D716414F63B67CA705CFDC76 /* LocationService.swift */,
+				3911C10FC3ECDB718E9F8E23 /* PokedexVoiceService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -501,6 +504,7 @@
 				F415949B887E05B96FC08F40 /* PokedexShellView.swift in Sources */,
 				FD24CFB8727F65C16DA76214 /* PokedexTheme.swift in Sources */,
 				550D0D73E07FD18612D634EB /* PokedexViewModel.swift in Sources */,
+				43DCE59F0DB9F058A2C216CD /* PokedexVoiceService.swift in Sources */,
 				22B20DDF283AED09382C0473 /* RarityGlow.swift in Sources */,
 				2C2D146270351342DD0D2764 /* RarityTier.swift in Sources */,
 				E6CE44DDD7B6AF8EA614C715 /* Salmonidae.swift in Sources */,

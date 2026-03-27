@@ -201,6 +201,11 @@ struct FishRevealAnimation: View {
                 showBanner = true
             }
         }
+
+        // Phase 6: Pokédex voice reads the discovery (3.5s in)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.5) {
+            PokedexVoiceService.shared.speakDiscovery(fish)
+        }
     }
 
     // MARK: - Typewriter Effect

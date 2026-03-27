@@ -185,6 +185,9 @@ struct ScannerResultView: View {
                 confidenceAnimated = match.confidence
             }
             HapticsService.scanPulse()
+
+            // Pokédex voice reads the scan result
+            PokedexVoiceService.shared.speakScanResult(match.fish, confidence: match.confidence)
         }
     }
 

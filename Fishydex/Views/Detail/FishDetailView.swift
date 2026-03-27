@@ -38,6 +38,19 @@ struct FishDetailView: View {
                     .foregroundStyle(.white)
                 }
             }
+            ToolbarItem(placement: .topBarTrailing) {
+                if isDiscovered {
+                    Button {
+                        HapticsService.buttonTap()
+                        PokedexVoiceService.shared.speakFishEntry(fish)
+                    } label: {
+                        Image(systemName: PokedexVoiceService.shared.isSpeaking ? "speaker.wave.3.fill" : "speaker.wave.2.fill")
+                            .font(.system(size: 16))
+                            .foregroundStyle(Color.screenGlow)
+                            .symbolEffect(.variableColor.iterative, isActive: PokedexVoiceService.shared.isSpeaking)
+                    }
+                }
+            }
         }
         .sheet(isPresented: Binding(
             get: { viewModel?.showCatchSheet ?? false },
