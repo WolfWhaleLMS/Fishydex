@@ -1,0 +1,718 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		008F56976DA9BF0A70DF54F3 /* Acipenseridae.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E728A46D86FD27C2E2F03B5 /* Acipenseridae.swift */; };
+		03D61CFFFF6C68906C7C1F2B /* Gasterosteidae.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE419588A515D7BEB2F4CB80 /* Gasterosteidae.swift */; };
+		0D3E4893E65577A22B99295F /* TypeBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D8C0A3C55A746910535E62 /* TypeBadge.swift */; };
+		1230E54D8AEDF00B1D8B6909 /* ScannerCaptureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FADF56382B4C7D4759C0E1 /* ScannerCaptureButton.swift */; };
+		15C024F6204606391743CEF7 /* ScanLineOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1490B7BDFA90114C3CE4990 /* ScanLineOverlay.swift */; };
+		186F3CED718F795A075A3071 /* FishTypeBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E21765F6956654B3DC7E080 /* FishTypeBadge.swift */; };
+		1AAC01BFECCB5E062788A083 /* FishSpeciesPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3418C4251C13E4D97932B01 /* FishSpeciesPickerView.swift */; };
+		1D318AD85BFF94D7A964D9CB /* PokedexHingeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397A12A048F33254FA32132A /* PokedexHingeView.swift */; };
+		22B20DDF283AED09382C0473 /* RarityGlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF3E59A918DC612118D162C /* RarityGlow.swift */; };
+		244CB2CA0DCC614C5DCFE94A /* ScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DE50432F34DA390CF56DF2 /* ScannerViewModel.swift */; };
+		27E506F68D4B80895FC91F92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B25D6F955882F5E03DE1697 /* Assets.xcassets */; };
+		2C2D146270351342DD0D2764 /* RarityTier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3B8804E44F6558524403C8 /* RarityTier.swift */; };
+		2D8930D816C1459B8501C07E /* FishHabitatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E8A785C011D95274FFB81F /* FishHabitatView.swift */; };
+		31380B2308BCF82BD9BBBD51 /* Osmeridae.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B47066A6CF5A1F3DA03101 /* Osmeridae.swift */; };
+		331A6A9CF163F784FD5A5D84 /* FishDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417A28B035DA94D2DDF982C9 /* FishDatabase.swift */; };
+		3592DCA47E023A4CE16B85D5 /* PokedexEntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B68AF88C6445A46B53B4F16 /* PokedexEntryCell.swift */; };
+		387CBCCC1CE6971FB1E46B85 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6088FB85D2ABC09E3A162695 /* Extensions.swift */; };
+		3B9AF157296480C878DF4E84 /* CollectionStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232294384227320E00837DF8 /* CollectionStatsView.swift */; };
+		403A9C9F905A6BFD21DA9F0F /* CatchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B653B1CD28CA9DA461F87D7 /* CatchService.swift */; };
+		4C2C375D19A9A2A1E52150F0 /* Umbridae.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3ABD8211DBBB402F4321BD /* Umbridae.swift */; };
+		4F3E0A9560E858F41AABD4E9 /* CatchLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381A6F48804F2BD2B6EFC6A5 /* CatchLogView.swift */; };
+		53103FF7D176A82C2F6E6072 /* PokedexGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C06AFA4817F28215C05E45 /* PokedexGridView.swift */; };
+		550D0D73E07FD18612D634EB /* PokedexViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1344CBA13CAB3AA475C334B /* PokedexViewModel.swift */; };
+		55FBFF3CC522707FE6FEB985 /* CatchRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A406B558EB2E1510E3575BD /* CatchRecord.swift */; };
+		5C9DB977B76C5F895C7644BA /* PokedexProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C77755ACE66B16DC217D8E0 /* PokedexProgressBar.swift */; };
+		5F31A7040D63DA2FAD53B70B /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D716414F63B67CA705CFDC76 /* LocationService.swift */; };
+		6354E45C44E068768401D9A9 /* Sciaenidae.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E690CC31E768CFAF2D815DC /* Sciaenidae.swift */; };
+		66827F99BA7C55424E53B81A /* ScannerPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E211F7485F8706F5F080E798 /* ScannerPlaceholderView.swift */; };
+		6A03EC2657B45355E4B64944 /* StatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613C6D44C2C3FFB50E2C66E3 /* StatsViewModel.swift */; };
+		6C86AA63E60CDED523F20661 /* Cottidae.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61C4C44BE2868ACD7D9F865 /* Cottidae.swift */; };
+		6D1E280A42ED3527A948531F /* Cyprinidae.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77BE4D14B28E4FCA6864320 /* Cyprinidae.swift */; };
+		6D522D6F9FB879186410C359 /* ARContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5532DC28AD42CCA3B713F8 /* ARContainerView.swift */; };
+		6E342BB81F1EFD7F4A3E6AA5 /* Catostomidae.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03745E28F4000D702F41E23C /* Catostomidae.swift */; };
+		730791221A3698C7399126F8 /* Petromyzontidae.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239E50A4FDB71DA8C3735A79 /* Petromyzontidae.swift */; };
+		7459AFFAE99FD213BB5D7591 /* FamilyProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA31486B8AABFAA67E28565 /* FamilyProgressView.swift */; };
+		787C5EB5B2610C5B8407CF3E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E0A6FE8957CC336CF41038 /* ContentView.swift */; };
+		80D44C93A2B05CB5D31AAD95 /* ScannerReticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFE8F0D81D7FDF86A9DA5D8 /* ScannerReticle.swift */; };
+		834DFAA5AABEE1517AF73EA1 /* ScannerHUDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB471E4B65729B9077F021C0 /* ScannerHUDView.swift */; };
+		842F1432C08BF607987CE377 /* FishRevealAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21161444D6E40F4028FE147 /* FishRevealAnimation.swift */; };
+		85FD6994CAC95B32B61AA1CE /* FishStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61148739784145474D8014A6 /* FishStatsView.swift */; };
+		909357BEBD0DB6D9735CEF8A /* Fish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202FA32F2B69BB934A5E603D /* Fish.swift */; };
+		95101D94A313CEBC1D7CF254 /* Ictaluridae.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE4971F2B90AD8125D40749 /* Ictaluridae.swift */; };
+		9769095C0A6DD414B00D3D94 /* FishDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D77FB900890CC65059D32B6 /* FishDetailView.swift */; };
+		9C67611E6A3DDCFBF39BEC49 /* PixelText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687C7FB31384E3528C33416A /* PixelText.swift */; };
+		A769C09D66A275BBA6ECB177 /* DiscoveryState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927DE23F7E8A1BB552AE380F /* DiscoveryState.swift */; };
+		AFBBB532E36C64A84B53A578 /* PokedexSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334B0C4B391215CBAF5E1D06 /* PokedexSearchBar.swift */; };
+		B59CFEEFD88F9DB0F5673C38 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983EEB5C26A73B1E1C723529 /* ScannerView.swift */; };
+		BFBED97103BC03A31B7F0B79 /* FishydexApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B9A38BC1012B17A7CAA517 /* FishydexApp.swift */; };
+		C1A3050692E182747CC57E6A /* Gadidae.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F59A8CAD80A15C6D874B089 /* Gadidae.swift */; };
+		C4B26A994751B276CD0EC38C /* Percidae.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520699F4D79454B7881E0BB2 /* Percidae.swift */; };
+		C6B89E2EC23332394E6256EE /* FishDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6905D6B472E5EB28E5B1C968 /* FishDetailViewModel.swift */; };
+		CB86D9CC962D201FB861F9FF /* HapticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741832D64EDB3CD872E960EF /* HapticsService.swift */; };
+		CDFD31CF81E9E54E72A38CC3 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C4A5B75C60F08BFC48236 /* AppConfig.swift */; };
+		CEC467188E573B9D107E8C81 /* CatchHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E3EF2F6AF7F17AE6E3162D /* CatchHistoryView.swift */; };
+		CEDA5A6016CC8E06615F0BC2 /* Esocidae.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FDDB4B3EFBB6880E425355 /* Esocidae.swift */; };
+		D643E8467F03C107C174F0AF /* FishFamily.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC6779D2731D75B167A7152 /* FishFamily.swift */; };
+		D65C19001AA84FD0CBBEE3BC /* FishCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD680BCDD77C8520167EEEB0 /* FishCategory.swift */; };
+		D6D9A322DA21CD1EE75FAA81 /* Percopsidae.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933EEC2FD5B826AAF7AF578B /* Percopsidae.swift */; };
+		DE78A1E5AF7F791B608CFEEF /* Hiodontidae.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5608C90D7A753FF1F8889F8F /* Hiodontidae.swift */; };
+		DF90487A8C688F69D8DCE944 /* PokedexButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA43EC1FBE6D3C8FA9E66D4 /* PokedexButton.swift */; };
+		E6CE44DDD7B6AF8EA614C715 /* Salmonidae.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2707681D3B3CED9FC1D4158 /* Salmonidae.swift */; };
+		EA4D810C77B2455781F9F450 /* Centrarchidae.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6071FD8A224524525AA05 /* Centrarchidae.swift */; };
+		F415949B887E05B96FC08F40 /* PokedexShellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B29C51316F5500D9C20923B /* PokedexShellView.swift */; };
+		F7872A78668AAE5EB4F56FB7 /* ARFishCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F421B3248BDA4F8B56349FA /* ARFishCardView.swift */; };
+		FD24CFB8727F65C16DA76214 /* PokedexTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C52E8132EF00278D125736 /* PokedexTheme.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		03745E28F4000D702F41E23C /* Catostomidae.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Catostomidae.swift; sourceTree = "<group>"; };
+		0A406B558EB2E1510E3575BD /* CatchRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchRecord.swift; sourceTree = "<group>"; };
+		0B68AF88C6445A46B53B4F16 /* PokedexEntryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexEntryCell.swift; sourceTree = "<group>"; };
+		1A9C4A5B75C60F08BFC48236 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		1AA43EC1FBE6D3C8FA9E66D4 /* PokedexButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexButton.swift; sourceTree = "<group>"; };
+		1B29C51316F5500D9C20923B /* PokedexShellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexShellView.swift; sourceTree = "<group>"; };
+		1E690CC31E768CFAF2D815DC /* Sciaenidae.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sciaenidae.swift; sourceTree = "<group>"; };
+		202FA32F2B69BB934A5E603D /* Fish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fish.swift; sourceTree = "<group>"; };
+		21B47066A6CF5A1F3DA03101 /* Osmeridae.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Osmeridae.swift; sourceTree = "<group>"; };
+		232294384227320E00837DF8 /* CollectionStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionStatsView.swift; sourceTree = "<group>"; };
+		239E50A4FDB71DA8C3735A79 /* Petromyzontidae.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Petromyzontidae.swift; sourceTree = "<group>"; };
+		27FDDB4B3EFBB6880E425355 /* Esocidae.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Esocidae.swift; sourceTree = "<group>"; };
+		2BE4971F2B90AD8125D40749 /* Ictaluridae.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ictaluridae.swift; sourceTree = "<group>"; };
+		2C77755ACE66B16DC217D8E0 /* PokedexProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexProgressBar.swift; sourceTree = "<group>"; };
+		334B0C4B391215CBAF5E1D06 /* PokedexSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexSearchBar.swift; sourceTree = "<group>"; };
+		35D8C0A3C55A746910535E62 /* TypeBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeBadge.swift; sourceTree = "<group>"; };
+		381A6F48804F2BD2B6EFC6A5 /* CatchLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchLogView.swift; sourceTree = "<group>"; };
+		397A12A048F33254FA32132A /* PokedexHingeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexHingeView.swift; sourceTree = "<group>"; };
+		417A28B035DA94D2DDF982C9 /* FishDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishDatabase.swift; sourceTree = "<group>"; };
+		42E0A6FE8957CC336CF41038 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		44E3EF2F6AF7F17AE6E3162D /* CatchHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchHistoryView.swift; sourceTree = "<group>"; };
+		4B653B1CD28CA9DA461F87D7 /* CatchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchService.swift; sourceTree = "<group>"; };
+		4E728A46D86FD27C2E2F03B5 /* Acipenseridae.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acipenseridae.swift; sourceTree = "<group>"; };
+		4FF3E59A918DC612118D162C /* RarityGlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RarityGlow.swift; sourceTree = "<group>"; };
+		520699F4D79454B7881E0BB2 /* Percidae.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Percidae.swift; sourceTree = "<group>"; };
+		5608C90D7A753FF1F8889F8F /* Hiodontidae.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hiodontidae.swift; sourceTree = "<group>"; };
+		5BFE8F0D81D7FDF86A9DA5D8 /* ScannerReticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerReticle.swift; sourceTree = "<group>"; };
+		6088FB85D2ABC09E3A162695 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		61148739784145474D8014A6 /* FishStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishStatsView.swift; sourceTree = "<group>"; };
+		613C6D44C2C3FFB50E2C66E3 /* StatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewModel.swift; sourceTree = "<group>"; };
+		687C7FB31384E3528C33416A /* PixelText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelText.swift; sourceTree = "<group>"; };
+		68C52E8132EF00278D125736 /* PokedexTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexTheme.swift; sourceTree = "<group>"; };
+		6905D6B472E5EB28E5B1C968 /* FishDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishDetailViewModel.swift; sourceTree = "<group>"; };
+		6E21765F6956654B3DC7E080 /* FishTypeBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishTypeBadge.swift; sourceTree = "<group>"; };
+		741832D64EDB3CD872E960EF /* HapticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsService.swift; sourceTree = "<group>"; };
+		77E6071FD8A224524525AA05 /* Centrarchidae.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Centrarchidae.swift; sourceTree = "<group>"; };
+		7D77FB900890CC65059D32B6 /* FishDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishDetailView.swift; sourceTree = "<group>"; };
+		7F421B3248BDA4F8B56349FA /* ARFishCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFishCardView.swift; sourceTree = "<group>"; };
+		7F59A8CAD80A15C6D874B089 /* Gadidae.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gadidae.swift; sourceTree = "<group>"; };
+		83E8A785C011D95274FFB81F /* FishHabitatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishHabitatView.swift; sourceTree = "<group>"; };
+		88C06AFA4817F28215C05E45 /* PokedexGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexGridView.swift; sourceTree = "<group>"; };
+		8FC6779D2731D75B167A7152 /* FishFamily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishFamily.swift; sourceTree = "<group>"; };
+		927DE23F7E8A1BB552AE380F /* DiscoveryState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryState.swift; sourceTree = "<group>"; };
+		933EEC2FD5B826AAF7AF578B /* Percopsidae.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Percopsidae.swift; sourceTree = "<group>"; };
+		983EEB5C26A73B1E1C723529 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		9B25D6F955882F5E03DE1697 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A77BE4D14B28E4FCA6864320 /* Cyprinidae.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cyprinidae.swift; sourceTree = "<group>"; };
+		AD5532DC28AD42CCA3B713F8 /* ARContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARContainerView.swift; sourceTree = "<group>"; };
+		AE419588A515D7BEB2F4CB80 /* Gasterosteidae.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gasterosteidae.swift; sourceTree = "<group>"; };
+		B7DE50432F34DA390CF56DF2 /* ScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewModel.swift; sourceTree = "<group>"; };
+		BA3B8804E44F6558524403C8 /* RarityTier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RarityTier.swift; sourceTree = "<group>"; };
+		C61C4C44BE2868ACD7D9F865 /* Cottidae.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cottidae.swift; sourceTree = "<group>"; };
+		CBA31486B8AABFAA67E28565 /* FamilyProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyProgressView.swift; sourceTree = "<group>"; };
+		CD680BCDD77C8520167EEEB0 /* FishCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishCategory.swift; sourceTree = "<group>"; };
+		D02FA91CE17026D4D13578CA /* Fishydex.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Fishydex.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D21161444D6E40F4028FE147 /* FishRevealAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishRevealAnimation.swift; sourceTree = "<group>"; };
+		D3418C4251C13E4D97932B01 /* FishSpeciesPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishSpeciesPickerView.swift; sourceTree = "<group>"; };
+		D716414F63B67CA705CFDC76 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		E1344CBA13CAB3AA475C334B /* PokedexViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexViewModel.swift; sourceTree = "<group>"; };
+		E211F7485F8706F5F080E798 /* ScannerPlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerPlaceholderView.swift; sourceTree = "<group>"; };
+		E2707681D3B3CED9FC1D4158 /* Salmonidae.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Salmonidae.swift; sourceTree = "<group>"; };
+		E5B9A38BC1012B17A7CAA517 /* FishydexApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishydexApp.swift; sourceTree = "<group>"; };
+		EB471E4B65729B9077F021C0 /* ScannerHUDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerHUDView.swift; sourceTree = "<group>"; };
+		F1490B7BDFA90114C3CE4990 /* ScanLineOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanLineOverlay.swift; sourceTree = "<group>"; };
+		F55E86EE938753121BEA1B0F /* Fishydex.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Fishydex.entitlements; sourceTree = "<group>"; };
+		F8FADF56382B4C7D4759C0E1 /* ScannerCaptureButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerCaptureButton.swift; sourceTree = "<group>"; };
+		FA3ABD8211DBBB402F4321BD /* Umbridae.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Umbridae.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		05CD9527BAB5FDF068C9DF15 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D02FA91CE17026D4D13578CA /* Fishydex.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1C1CF87E23DB80D974FA0EBF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				687C7FB31384E3528C33416A /* PixelText.swift */,
+				1AA43EC1FBE6D3C8FA9E66D4 /* PokedexButton.swift */,
+				4FF3E59A918DC612118D162C /* RarityGlow.swift */,
+				F1490B7BDFA90114C3CE4990 /* ScanLineOverlay.swift */,
+				35D8C0A3C55A746910535E62 /* TypeBadge.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2B1D8B347E20323E2C24B6D9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				36793A3F22433685F968AC93 /* Families */,
+				417A28B035DA94D2DDF982C9 /* FishDatabase.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		2CDDAEFCC1F2FFD5E55755C4 = {
+			isa = PBXGroup;
+			children = (
+				496ED6068720B617149D2D19 /* Fishydex */,
+				05CD9527BAB5FDF068C9DF15 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3592F1E242B52E8342A010F3 /* ARDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				AD5532DC28AD42CCA3B713F8 /* ARContainerView.swift */,
+				7F421B3248BDA4F8B56349FA /* ARFishCardView.swift */,
+			);
+			path = ARDisplay;
+			sourceTree = "<group>";
+		};
+		36793A3F22433685F968AC93 /* Families */ = {
+			isa = PBXGroup;
+			children = (
+				4E728A46D86FD27C2E2F03B5 /* Acipenseridae.swift */,
+				03745E28F4000D702F41E23C /* Catostomidae.swift */,
+				77E6071FD8A224524525AA05 /* Centrarchidae.swift */,
+				C61C4C44BE2868ACD7D9F865 /* Cottidae.swift */,
+				A77BE4D14B28E4FCA6864320 /* Cyprinidae.swift */,
+				27FDDB4B3EFBB6880E425355 /* Esocidae.swift */,
+				7F59A8CAD80A15C6D874B089 /* Gadidae.swift */,
+				AE419588A515D7BEB2F4CB80 /* Gasterosteidae.swift */,
+				5608C90D7A753FF1F8889F8F /* Hiodontidae.swift */,
+				2BE4971F2B90AD8125D40749 /* Ictaluridae.swift */,
+				21B47066A6CF5A1F3DA03101 /* Osmeridae.swift */,
+				520699F4D79454B7881E0BB2 /* Percidae.swift */,
+				933EEC2FD5B826AAF7AF578B /* Percopsidae.swift */,
+				239E50A4FDB71DA8C3735A79 /* Petromyzontidae.swift */,
+				E2707681D3B3CED9FC1D4158 /* Salmonidae.swift */,
+				1E690CC31E768CFAF2D815DC /* Sciaenidae.swift */,
+				FA3ABD8211DBBB402F4321BD /* Umbridae.swift */,
+			);
+			path = Families;
+			sourceTree = "<group>";
+		};
+		3CBD964284125888CDFBC6A8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4B653B1CD28CA9DA461F87D7 /* CatchService.swift */,
+				741832D64EDB3CD872E960EF /* HapticsService.swift */,
+				D716414F63B67CA705CFDC76 /* LocationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		496ED6068720B617149D2D19 /* Fishydex */ = {
+			isa = PBXGroup;
+			children = (
+				CB5BEF63E78EF67F9A4891DC /* Config */,
+				2B1D8B347E20323E2C24B6D9 /* Data */,
+				CD3AE00D4E30E26E3AD76C5F /* Models */,
+				D2382EF4660A73C81A4E27CE /* Preview Content */,
+				3CBD964284125888CDFBC6A8 /* Services */,
+				C2C36418CF3906FBF3111D69 /* Utilities */,
+				A7C3891D6D0E08855C4075D7 /* ViewModels */,
+				52A0459F0B2B44D74E672999 /* Views */,
+				9B25D6F955882F5E03DE1697 /* Assets.xcassets */,
+				42E0A6FE8957CC336CF41038 /* ContentView.swift */,
+				F55E86EE938753121BEA1B0F /* Fishydex.entitlements */,
+				E5B9A38BC1012B17A7CAA517 /* FishydexApp.swift */,
+			);
+			path = Fishydex;
+			sourceTree = "<group>";
+		};
+		4EBCE0105EE9A3CC313D65E5 /* Shell */ = {
+			isa = PBXGroup;
+			children = (
+				397A12A048F33254FA32132A /* PokedexHingeView.swift */,
+				1B29C51316F5500D9C20923B /* PokedexShellView.swift */,
+			);
+			path = Shell;
+			sourceTree = "<group>";
+		};
+		52A0459F0B2B44D74E672999 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3592F1E242B52E8342A010F3 /* ARDisplay */,
+				8D57C451E02079F69DE4ABC1 /* Catch */,
+				1C1CF87E23DB80D974FA0EBF /* Components */,
+				54A5000E9B97CC466B682A2B /* Detail */,
+				E35622D62F6C4FD96B04575E /* Pokedex */,
+				A43516F4E686C0535FF5B964 /* Scanner */,
+				4EBCE0105EE9A3CC313D65E5 /* Shell */,
+				D5E752F8F21A742E20F8D241 /* Stats */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		54A5000E9B97CC466B682A2B /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				7D77FB900890CC65059D32B6 /* FishDetailView.swift */,
+				83E8A785C011D95274FFB81F /* FishHabitatView.swift */,
+				D21161444D6E40F4028FE147 /* FishRevealAnimation.swift */,
+				61148739784145474D8014A6 /* FishStatsView.swift */,
+				6E21765F6956654B3DC7E080 /* FishTypeBadge.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		8D57C451E02079F69DE4ABC1 /* Catch */ = {
+			isa = PBXGroup;
+			children = (
+				44E3EF2F6AF7F17AE6E3162D /* CatchHistoryView.swift */,
+				381A6F48804F2BD2B6EFC6A5 /* CatchLogView.swift */,
+			);
+			path = Catch;
+			sourceTree = "<group>";
+		};
+		A43516F4E686C0535FF5B964 /* Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				D3418C4251C13E4D97932B01 /* FishSpeciesPickerView.swift */,
+				F8FADF56382B4C7D4759C0E1 /* ScannerCaptureButton.swift */,
+				EB471E4B65729B9077F021C0 /* ScannerHUDView.swift */,
+				E211F7485F8706F5F080E798 /* ScannerPlaceholderView.swift */,
+				5BFE8F0D81D7FDF86A9DA5D8 /* ScannerReticle.swift */,
+				983EEB5C26A73B1E1C723529 /* ScannerView.swift */,
+			);
+			path = Scanner;
+			sourceTree = "<group>";
+		};
+		A7C3891D6D0E08855C4075D7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				6905D6B472E5EB28E5B1C968 /* FishDetailViewModel.swift */,
+				E1344CBA13CAB3AA475C334B /* PokedexViewModel.swift */,
+				B7DE50432F34DA390CF56DF2 /* ScannerViewModel.swift */,
+				613C6D44C2C3FFB50E2C66E3 /* StatsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C2C36418CF3906FBF3111D69 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				6088FB85D2ABC09E3A162695 /* Extensions.swift */,
+				68C52E8132EF00278D125736 /* PokedexTheme.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		CB5BEF63E78EF67F9A4891DC /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				1A9C4A5B75C60F08BFC48236 /* AppConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		CD3AE00D4E30E26E3AD76C5F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0A406B558EB2E1510E3575BD /* CatchRecord.swift */,
+				927DE23F7E8A1BB552AE380F /* DiscoveryState.swift */,
+				202FA32F2B69BB934A5E603D /* Fish.swift */,
+				CD680BCDD77C8520167EEEB0 /* FishCategory.swift */,
+				8FC6779D2731D75B167A7152 /* FishFamily.swift */,
+				BA3B8804E44F6558524403C8 /* RarityTier.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D2382EF4660A73C81A4E27CE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D5E752F8F21A742E20F8D241 /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+				232294384227320E00837DF8 /* CollectionStatsView.swift */,
+				CBA31486B8AABFAA67E28565 /* FamilyProgressView.swift */,
+			);
+			path = Stats;
+			sourceTree = "<group>";
+		};
+		E35622D62F6C4FD96B04575E /* Pokedex */ = {
+			isa = PBXGroup;
+			children = (
+				0B68AF88C6445A46B53B4F16 /* PokedexEntryCell.swift */,
+				88C06AFA4817F28215C05E45 /* PokedexGridView.swift */,
+				2C77755ACE66B16DC217D8E0 /* PokedexProgressBar.swift */,
+				334B0C4B391215CBAF5E1D06 /* PokedexSearchBar.swift */,
+			);
+			path = Pokedex;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		010EAFE8F9EE5D8885747728 /* Fishydex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C54F05210B29D810FCCD6ABA /* Build configuration list for PBXNativeTarget "Fishydex" */;
+			buildPhases = (
+				F3E9002A1682C031FDC81DDF /* Sources */,
+				FAF9222A23956A0904AF32A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fishydex;
+			packageProductDependencies = (
+			);
+			productName = Fishydex;
+			productReference = D02FA91CE17026D4D13578CA /* Fishydex.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA3CC8665CF41C60A1E0BB21 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					010EAFE8F9EE5D8885747728 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A67058906B74E9E913160F40 /* Build configuration list for PBXProject "Fishydex" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 2CDDAEFCC1F2FFD5E55755C4;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 05CD9527BAB5FDF068C9DF15 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				010EAFE8F9EE5D8885747728 /* Fishydex */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAF9222A23956A0904AF32A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27E506F68D4B80895FC91F92 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3E9002A1682C031FDC81DDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D522D6F9FB879186410C359 /* ARContainerView.swift in Sources */,
+				F7872A78668AAE5EB4F56FB7 /* ARFishCardView.swift in Sources */,
+				008F56976DA9BF0A70DF54F3 /* Acipenseridae.swift in Sources */,
+				CDFD31CF81E9E54E72A38CC3 /* AppConfig.swift in Sources */,
+				CEC467188E573B9D107E8C81 /* CatchHistoryView.swift in Sources */,
+				4F3E0A9560E858F41AABD4E9 /* CatchLogView.swift in Sources */,
+				55FBFF3CC522707FE6FEB985 /* CatchRecord.swift in Sources */,
+				403A9C9F905A6BFD21DA9F0F /* CatchService.swift in Sources */,
+				6E342BB81F1EFD7F4A3E6AA5 /* Catostomidae.swift in Sources */,
+				EA4D810C77B2455781F9F450 /* Centrarchidae.swift in Sources */,
+				3B9AF157296480C878DF4E84 /* CollectionStatsView.swift in Sources */,
+				787C5EB5B2610C5B8407CF3E /* ContentView.swift in Sources */,
+				6C86AA63E60CDED523F20661 /* Cottidae.swift in Sources */,
+				6D1E280A42ED3527A948531F /* Cyprinidae.swift in Sources */,
+				A769C09D66A275BBA6ECB177 /* DiscoveryState.swift in Sources */,
+				CEDA5A6016CC8E06615F0BC2 /* Esocidae.swift in Sources */,
+				387CBCCC1CE6971FB1E46B85 /* Extensions.swift in Sources */,
+				7459AFFAE99FD213BB5D7591 /* FamilyProgressView.swift in Sources */,
+				909357BEBD0DB6D9735CEF8A /* Fish.swift in Sources */,
+				D65C19001AA84FD0CBBEE3BC /* FishCategory.swift in Sources */,
+				331A6A9CF163F784FD5A5D84 /* FishDatabase.swift in Sources */,
+				9769095C0A6DD414B00D3D94 /* FishDetailView.swift in Sources */,
+				C6B89E2EC23332394E6256EE /* FishDetailViewModel.swift in Sources */,
+				D643E8467F03C107C174F0AF /* FishFamily.swift in Sources */,
+				2D8930D816C1459B8501C07E /* FishHabitatView.swift in Sources */,
+				842F1432C08BF607987CE377 /* FishRevealAnimation.swift in Sources */,
+				1AAC01BFECCB5E062788A083 /* FishSpeciesPickerView.swift in Sources */,
+				85FD6994CAC95B32B61AA1CE /* FishStatsView.swift in Sources */,
+				186F3CED718F795A075A3071 /* FishTypeBadge.swift in Sources */,
+				BFBED97103BC03A31B7F0B79 /* FishydexApp.swift in Sources */,
+				C1A3050692E182747CC57E6A /* Gadidae.swift in Sources */,
+				03D61CFFFF6C68906C7C1F2B /* Gasterosteidae.swift in Sources */,
+				CB86D9CC962D201FB861F9FF /* HapticsService.swift in Sources */,
+				DE78A1E5AF7F791B608CFEEF /* Hiodontidae.swift in Sources */,
+				95101D94A313CEBC1D7CF254 /* Ictaluridae.swift in Sources */,
+				5F31A7040D63DA2FAD53B70B /* LocationService.swift in Sources */,
+				31380B2308BCF82BD9BBBD51 /* Osmeridae.swift in Sources */,
+				C4B26A994751B276CD0EC38C /* Percidae.swift in Sources */,
+				D6D9A322DA21CD1EE75FAA81 /* Percopsidae.swift in Sources */,
+				730791221A3698C7399126F8 /* Petromyzontidae.swift in Sources */,
+				9C67611E6A3DDCFBF39BEC49 /* PixelText.swift in Sources */,
+				DF90487A8C688F69D8DCE944 /* PokedexButton.swift in Sources */,
+				3592DCA47E023A4CE16B85D5 /* PokedexEntryCell.swift in Sources */,
+				53103FF7D176A82C2F6E6072 /* PokedexGridView.swift in Sources */,
+				1D318AD85BFF94D7A964D9CB /* PokedexHingeView.swift in Sources */,
+				5C9DB977B76C5F895C7644BA /* PokedexProgressBar.swift in Sources */,
+				AFBBB532E36C64A84B53A578 /* PokedexSearchBar.swift in Sources */,
+				F415949B887E05B96FC08F40 /* PokedexShellView.swift in Sources */,
+				FD24CFB8727F65C16DA76214 /* PokedexTheme.swift in Sources */,
+				550D0D73E07FD18612D634EB /* PokedexViewModel.swift in Sources */,
+				22B20DDF283AED09382C0473 /* RarityGlow.swift in Sources */,
+				2C2D146270351342DD0D2764 /* RarityTier.swift in Sources */,
+				E6CE44DDD7B6AF8EA614C715 /* Salmonidae.swift in Sources */,
+				15C024F6204606391743CEF7 /* ScanLineOverlay.swift in Sources */,
+				1230E54D8AEDF00B1D8B6909 /* ScannerCaptureButton.swift in Sources */,
+				834DFAA5AABEE1517AF73EA1 /* ScannerHUDView.swift in Sources */,
+				66827F99BA7C55424E53B81A /* ScannerPlaceholderView.swift in Sources */,
+				80D44C93A2B05CB5D31AAD95 /* ScannerReticle.swift in Sources */,
+				B59CFEEFD88F9DB0F5673C38 /* ScannerView.swift in Sources */,
+				244CB2CA0DCC614C5DCFE94A /* ScannerViewModel.swift in Sources */,
+				6354E45C44E068768401D9A9 /* Sciaenidae.swift in Sources */,
+				6A03EC2657B45355E4B64944 /* StatsViewModel.swift in Sources */,
+				0D3E4893E65577A22B99295F /* TypeBadge.swift in Sources */,
+				4C2C375D19A9A2A1E52150F0 /* Umbridae.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7D44AEB1F0882DF95BFBB9C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Fishydex/Fishydex.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Fishydex needs camera access for the Scanner mode to photograph your catches";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Fishydex uses your location to tag where you caught each fish";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Fishydex needs photo library access to save and attach catch photos";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fishydex.app;
+				PRODUCT_NAME = Fishydex;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83594FDF4CFFD2D325378875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		998C46C3633E850D0D217802 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Fishydex/Fishydex.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Fishydex needs camera access for the Scanner mode to photograph your catches";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Fishydex uses your location to tag where you caught each fish";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Fishydex needs photo library access to save and attach catch photos";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fishydex.app;
+				PRODUCT_NAME = Fishydex;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9F9B599F16E538BB696EAB90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A67058906B74E9E913160F40 /* Build configuration list for PBXProject "Fishydex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F9B599F16E538BB696EAB90 /* Debug */,
+				83594FDF4CFFD2D325378875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C54F05210B29D810FCCD6ABA /* Build configuration list for PBXNativeTarget "Fishydex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D44AEB1F0882DF95BFBB9C1 /* Debug */,
+				998C46C3633E850D0D217802 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA3CC8665CF41C60A1E0BB21 /* Project object */;
+}
