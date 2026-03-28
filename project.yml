@@ -14,6 +14,7 @@ settings:
     CURRENT_PROJECT_VERSION: 1
     MARKETING_VERSION: "1.0.0"
     CODE_SIGN_STYLE: Automatic
+    DEVELOPMENT_TEAM: BFV628Z979
 
 targets:
   Fishydex:
@@ -27,6 +28,7 @@ targets:
         INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: YES
         INFOPLIST_KEY_UILaunchScreen_Generation: YES
         INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: "UIInterfaceOrientationPortrait"
+        INFOPLIST_KEY_UIRequiresFullScreen: YES
         INFOPLIST_KEY_NSCameraUsageDescription: "Fishydex needs camera access for the Scanner mode to photograph your catches"
         INFOPLIST_KEY_NSLocationWhenInUseUsageDescription: "Fishydex uses your location to tag where you caught each fish"
         INFOPLIST_KEY_NSPhotoLibraryUsageDescription: "Fishydex needs photo library access to save and attach catch photos"

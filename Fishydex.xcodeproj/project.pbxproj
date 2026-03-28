@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB2233445566778899001122 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = AA1122334455667788990011 /* PrivacyInfo.xcprivacy */; };
 		008F56976DA9BF0A70DF54F3 /* Acipenseridae.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E728A46D86FD27C2E2F03B5 /* Acipenseridae.swift */; };
 		03D61CFFFF6C68906C7C1F2B /* Gasterosteidae.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE419588A515D7BEB2F4CB80 /* Gasterosteidae.swift */; };
 		0D3E4893E65577A22B99295F /* TypeBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D8C0A3C55A746910535E62 /* TypeBadge.swift */; };
@@ -148,6 +149,7 @@
 		EB471E4B65729B9077F021C0 /* ScannerHUDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerHUDView.swift; sourceTree = "<group>"; };
 		F1490B7BDFA90114C3CE4990 /* ScanLineOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanLineOverlay.swift; sourceTree = "<group>"; };
 		F55E86EE938753121BEA1B0F /* Fishydex.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Fishydex.entitlements; sourceTree = "<group>"; };
+		AA1122334455667788990011 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		F8FADF56382B4C7D4759C0E1 /* ScannerCaptureButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerCaptureButton.swift; sourceTree = "<group>"; };
 		FA3ABD8211DBBB402F4321BD /* Umbridae.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Umbridae.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -250,6 +252,7 @@
 				9B25D6F955882F5E03DE1697 /* Assets.xcassets */,
 				42E0A6FE8957CC336CF41038 /* ContentView.swift */,
 				F55E86EE938753121BEA1B0F /* Fishydex.entitlements */,
+				AA1122334455667788990011 /* PrivacyInfo.xcprivacy */,
 				E5B9A38BC1012B17A7CAA517 /* FishydexApp.swift */,
 			);
 			path = Fishydex;
@@ -413,6 +416,7 @@
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					010EAFE8F9EE5D8885747728 = {
+						DevelopmentTeam = BFV628Z979;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -442,6 +446,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27E506F68D4B80895FC91F92 /* Assets.xcassets in Resources */,
+				BB2233445566778899001122 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,6 +545,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -590,6 +596,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = BFV628Z979;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -627,6 +634,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -677,6 +685,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = BFV628Z979;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
