@@ -552,6 +552,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fishydex.app;
+				INFOPLIST_KEY_CFBundleDisplayName = Fishface;
 				PRODUCT_NAME = Fishydex;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -641,6 +642,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fishydex.app;
+				INFOPLIST_KEY_CFBundleDisplayName = Fishface;
 				PRODUCT_NAME = Fishydex;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
