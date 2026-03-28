@@ -74,7 +74,7 @@ struct ContentView: View {
 
 // MARK: - Preview
 
-#Preview("Fishydex") {
+#Preview("Fishface") {
     ContentView()
         .modelContainer(for: [CatchRecord.self, DiscoveryState.self], inMemory: true)
 }

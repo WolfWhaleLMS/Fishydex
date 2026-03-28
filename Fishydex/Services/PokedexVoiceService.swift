@@ -178,7 +178,7 @@ final class PokedexVoiceService: NSObject, ObservableObject, AVSpeechSynthesizer
         parts.append("New species discovered!")
         parts.append("\(fish.commonName).")
         parts.append("\(fish.scientificName).")
-        parts.append("Entry number \(fish.id) has been added to your Fishydex.")
+        parts.append("Entry number \(fish.id) has been added to your Fishface.")
 
         // Quick fact
         let description = truncateToSentences(fish.description, count: 1)

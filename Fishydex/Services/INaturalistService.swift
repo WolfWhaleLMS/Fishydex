@@ -104,7 +104,7 @@ actor INaturalistService {
         }
 
         // Build multipart form data
-        let boundary = "Fishydex-\(UUID().uuidString)"
+        let boundary = "Fishface-\(UUID().uuidString)"
         var body = Data()
 
         // Image field

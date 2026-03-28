@@ -4,7 +4,7 @@ import CoreLocation
 
 // MARK: - FishIdentificationService
 
-/// Maps iNaturalist identification results to Fishydex fish entries.
+/// Maps iNaturalist identification results to Fishface fish entries.
 /// Matches by scientific name, falling back to common name fuzzy matching.
 actor FishIdentificationService {
 
@@ -74,7 +74,7 @@ actor FishIdentificationService {
 
     // MARK: - Identification
 
-    /// Identify a fish from a photo. Returns matched Fishydex entries ranked by confidence.
+    /// Identify a fish from a photo. Returns matched Fishface entries ranked by confidence.
     func identify(
         image: UIImage,
         location: CLLocation? = nil
@@ -93,11 +93,11 @@ actor FishIdentificationService {
             return .failed("Network error: \(error.localizedDescription)")
         }
 
-        // Map iNaturalist results to Fishydex entries
+        // Map iNaturalist results to Fishface entries
         var matches: [Match] = []
 
         for result in results {
-            if let match = matchToFishydex(result) {
+            if let match = matchToFishface(result) {
                 matches.append(match)
             }
         }
@@ -111,8 +111,8 @@ actor FishIdentificationService {
 
     // MARK: - Matching Logic
 
-    /// Try to match an iNaturalist result to a Fishydex fish entry.
-    private func matchToFishydex(_ result: INaturalistService.IdentificationResult) -> Match? {
+    /// Try to match an iNaturalist result to a Fishface fish entry.
+    private func matchToFishface(_ result: INaturalistService.IdentificationResult) -> Match? {
         let sciName = result.scientificName.lowercased()
         let comName = result.commonName.lowercased()
 

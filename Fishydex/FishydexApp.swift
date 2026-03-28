@@ -3,7 +3,7 @@ import SwiftData
 
 // MARK: - FishydexApp
 
-/// Main entry point for Fishydex — a Pokedex for every fish in Saskatchewan.
+/// Main entry point for Fishface — a Pokedex for every fish in Saskatchewan.
 ///
 /// Sets up the SwiftData model container for `CatchRecord` and `DiscoveryState`
 /// persistence, then hands off to the root `ContentView`.

@@ -165,21 +165,21 @@ final class StatsViewModel {
         Achievement(
             id: "invasive_hunter",
             name: "Invasive Hunter",
-            description: "Discover every invasive species in the Fishydex.",
+            description: "Discover every invasive species in the Fishface.",
             iconName: "exclamationmark.triangle.fill",
             isUnlocked: false
         ),
         Achievement(
             id: "saskatchewan_angler",
             name: "Saskatchewan Angler",
-            description: "Discover 50% of all species in the Fishydex.",
+            description: "Discover 50% of all species in the Fishface.",
             iconName: "star.fill",
             isUnlocked: false
         ),
         Achievement(
             id: "pokedex_complete",
             name: "Pokedex Complete",
-            description: "Discover every single species. You are a true Fishydex Master.",
+            description: "Discover every single species. You are a true Fishface Master.",
             iconName: "crown.fill",
             isUnlocked: false
         ),
