@@ -388,9 +388,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		010EAFE8F9EE5D8885747728 /* Fishydex */ = {
+		010EAFE8F9EE5D8885747728 /* Fishface */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C54F05210B29D810FCCD6ABA /* Build configuration list for PBXNativeTarget "Fishydex" */;
+			buildConfigurationList = C54F05210B29D810FCCD6ABA /* Build configuration list for PBXNativeTarget "Fishface" */;
 			buildPhases = (
 				F3E9002A1682C031FDC81DDF /* Sources */,
 				FAF9222A23956A0904AF32A5 /* Resources */,
@@ -399,10 +399,10 @@
 			);
 			dependencies = (
 			);
-			name = Fishydex;
+			name = Fishface;
 			packageProductDependencies = (
 			);
-			productName = Fishydex;
+			productName = Fishface;
 			productReference = D02FA91CE17026D4D13578CA /* Fishydex.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -435,7 +435,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				010EAFE8F9EE5D8885747728 /* Fishydex */,
+				010EAFE8F9EE5D8885747728 /* Fishface */,
 			);
 		};
 /* End PBXProject section */
@@ -730,7 +730,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		C54F05210B29D810FCCD6ABA /* Build configuration list for PBXNativeTarget "Fishydex" */ = {
+		C54F05210B29D810FCCD6ABA /* Build configuration list for PBXNativeTarget "Fishface" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7D44AEB1F0882DF95BFBB9C1 /* Debug */,
