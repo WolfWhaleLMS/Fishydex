@@ -88,8 +88,8 @@ final class ScannerViewModel {
         identifiedMatches = []
 
         // Request location in the background; non-blocking if denied.
+        await locationService.requestPermission()
         do {
-            try await locationService.requestPermission()
             currentLocation = try await locationService.currentLocation()
         } catch {
             currentLocation = nil

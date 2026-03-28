@@ -44,12 +44,13 @@ struct ARContainerView: UIViewRepresentable {
 
     // MARK: - Coordinator
 
-    final class Coordinator: NSObject, ARSessionDelegate, @unchecked Sendable {
+    @MainActor
+    final class Coordinator: NSObject, ARSessionDelegate {
 
         var fish: Fish
         weak var arView: ARView?
         private var hasPlacedCard: Bool = false
-        private nonisolated(unsafe) var onCardPlaced: (() -> Void)?
+        private var onCardPlaced: (() -> Void)?
 
         init(fish: Fish, onCardPlaced: (() -> Void)?) {
             self.fish = fish
@@ -58,21 +59,17 @@ struct ARContainerView: UIViewRepresentable {
 
         // MARK: - ARSessionDelegate
 
-        func session(_ session: ARSession, didAdd anchors: [ARAnchor]) {
-            guard !hasPlacedCard else { return }
+        nonisolated func session(_ session: ARSession, didAdd anchors: [ARAnchor]) {
+            let planeAnchors = anchors.compactMap { $0 as? ARPlaneAnchor }
+                .filter { $0.alignment == .horizontal }
+            guard let planeAnchor = planeAnchors.first else { return }
 
-            for anchor in anchors {
-                guard let planeAnchor = anchor as? ARPlaneAnchor,
-                      planeAnchor.alignment == .horizontal else { continue }
-
-                placeFishCard(at: planeAnchor)
-                hasPlacedCard = true
-
-                Task { @MainActor in
-                    self.onCardPlaced?()
-                    HapticsService.revealFeedback()
-                }
-                break
+            Task { @MainActor in
+                guard !self.hasPlacedCard else { return }
+                self.placeFishCard(at: planeAnchor)
+                self.hasPlacedCard = true
+                self.onCardPlaced?()
+                HapticsService.revealFeedback()
             }
         }
 
@@ -268,10 +265,6 @@ struct ARContainerView: UIViewRepresentable {
                 relativeTo: entity.parent,
                 duration: 20.0
             )
-
-            // Note: For a continuous rotation, the hosting view should re-trigger
-            // this animation periodically. RealityKit doesn't natively support
-            // infinite animations on transforms.
         }
     }
 }

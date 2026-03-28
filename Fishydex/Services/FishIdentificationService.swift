@@ -88,7 +88,7 @@ actor FishIdentificationService {
                 longitude: location?.coordinate.longitude
             )
         } catch let error as INaturalistService.IdentificationError {
-            return .failed(error.localizedDescription ?? "Identification failed")
+            return .failed(error.localizedDescription)
         } catch {
             return .failed("Network error: \(error.localizedDescription)")
         }

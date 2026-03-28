@@ -1,5 +1,5 @@
 import SwiftUI
-import AVFoundation
+@preconcurrency import AVFoundation
 
 // MARK: - ScannerView
 
@@ -117,21 +117,23 @@ struct ScannerView: View {
             return
         }
         cameraSession.addOutput(photoOutput)
-        photoOutput.isHighResolutionCaptureEnabled = true
+        photoOutput.maxPhotoDimensions = CMVideoDimensions(width: 4032, height: 3024)
 
         cameraSession.commitConfiguration()
         isCameraConfigured = true
 
         // Start on a background thread
+        let session = cameraSession
         DispatchQueue.global(qos: .userInitiated).async {
-            cameraSession.startRunning()
+            session.startRunning()
         }
     }
 
     private func stopCamera() {
+        let session = cameraSession
         DispatchQueue.global(qos: .userInitiated).async {
-            if cameraSession.isRunning {
-                cameraSession.stopRunning()
+            if session.isRunning {
+                session.stopRunning()
             }
         }
     }
@@ -140,7 +142,7 @@ struct ScannerView: View {
         guard isCameraConfigured else { return }
 
         let settings = AVCapturePhotoSettings()
-        settings.isHighResolutionPhotoEnabled = true
+        settings.maxPhotoDimensions = photoOutput.maxPhotoDimensions
         photoOutput.capturePhoto(with: settings, delegate: photoCaptureDelegate)
 
         HapticsService.scanPulse()
