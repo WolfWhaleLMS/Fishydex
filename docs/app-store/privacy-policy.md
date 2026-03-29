@@ -1,20 +1,20 @@
-# Fishydex Privacy Policy
+# Fishface Privacy Policy
 
 **Last Updated:** March 27, 2026
 
 ## Overview
 
-Fishydex is a fish species identification and catch logging app designed for Saskatchewan anglers. We are committed to protecting your privacy. This policy explains what data the app accesses and how it is handled.
+Fishface is a fish species identification and catch logging app designed for Saskatchewan anglers. We are committed to protecting your privacy. This policy explains what data the app accesses and how it is handled.
 
 ## Data We Access
 
 ### Camera Photos
-- Fishydex accesses your device camera to photograph fish for species identification.
+- Fishface accesses your device camera to photograph fish for species identification.
 - Photos are stored locally on your device only.
 - Photos are not uploaded to any server owned or operated by us.
 
 ### GPS Location
-- Fishydex accesses your device location to tag catches with GPS coordinates.
+- Fishface accesses your device location to tag catches with GPS coordinates.
 - Location data is stored locally on your device only.
 - Location data is not transmitted to any server owned or operated by us.
 
@@ -34,18 +34,18 @@ Fishydex is a fish species identification and catch logging app designed for Sas
 
 ## Analytics, Ads, and Tracking
 
-- Fishydex does not collect analytics.
-- Fishydex does not display advertisements.
-- Fishydex does not use any tracking frameworks or SDKs.
-- Fishydex does not share data with any third parties for advertising or marketing purposes.
+- Fishface does not collect analytics.
+- Fishface does not display advertisements.
+- Fishface does not use any tracking frameworks or SDKs.
+- Fishface does not share data with any third parties for advertising or marketing purposes.
 
 ## Data Deletion
 
-Since all data is stored locally on your device, you can delete all Fishydex data at any time by deleting the app from your device.
+Since all data is stored locally on your device, you can delete all Fishface data at any time by deleting the app from your device.
 
 ## Children's Privacy
 
-Fishydex does not collect personal information from anyone, including children under 13. The app is rated 4+ and is safe for all ages.
+Fishface does not collect personal information from anyone, including children under 13. The app is rated 4+ and is safe for all ages.
 
 ## Changes to This Policy
 
@@ -55,4 +55,4 @@ We may update this privacy policy from time to time. Any changes will be reflect
 
 If you have questions about this privacy policy, please contact us at:
 
-**Email:** support@fishydex.app
+**Email:** support@fishface.app

@@ -1,4 +1,4 @@
-# Fishydex — Saskatchewan Fish Pokedex (iOS App)
+# Fishface — Saskatchewan Fish Pokedex (iOS App)
 
 **Date:** 2026-03-27
 **Status:** Approved
@@ -7,7 +7,7 @@
 
 ## Overview
 
-Fishydex is a standalone iOS app that functions as a real Pokedex — but for every fish species in Saskatchewan. Users discover and collect fish entries by logging catches. Undiscovered fish appear as dark silhouettes; caught fish reveal full-color entries with real photos, scientific data, habitat info, and stats. Includes an AR Scanner mode for the authentic Pokedex scanning experience.
+Fishface is a standalone iOS app that functions as a real Pokedex — but for every fish species in Saskatchewan. Users discover and collect fish entries by logging catches. Undiscovered fish appear as dark silhouettes; caught fish reveal full-color entries with real photos, scientific data, habitat info, and stats. Includes an AR Scanner mode for the authentic Pokedex scanning experience.
 
 **Target:** iPhone (iOS 17+), SwiftUI, local-only (no backend).
 
@@ -58,8 +58,8 @@ Fishydex is a standalone iOS app that functions as a real Pokedex — but for ev
 Follows WolfWhale iOS patterns:
 
 ```
-Fishydex/
-├── FishydexApp.swift                    # App entry point
+Fishface/
+├── FishfaceApp.swift                    # App entry point
 ├── Config/
 │   └── AppConfig.swift                  # App-wide constants
 ├── Models/

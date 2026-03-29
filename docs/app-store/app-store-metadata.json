@@ -1,9 +1,9 @@
 {
-  "name": "Fishydex",
+  "name": "Fishface",
   "subtitle": "Saskatchewan Fish Pokédex",
   "category": "Reference",
   "secondaryCategory": "Sports",
   "ageRating": "4+",
   "price": "Free",
-  "bundleId": "com.fishydex.app"
+  "bundleId": "com.fishface.app"
 }
